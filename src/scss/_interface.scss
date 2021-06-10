@@ -1,0 +1,97 @@
+// colors
+$primary: #000000;
+$secondary: #9d9d9d;
+$line: #ebebeb2a;
+
+// Font size
+$fontLargeButton: 12px;
+$fontButton: 11px;
+$fontTitle: 12px;
+$fontText: 13px;
+
+// Font weight
+$weightButton: 500;
+$weightTitle: 500;
+$weightText: 400;
+
+// Line height
+
+$heightTitle: 1.6;
+$heightText: 1.6;
+
+// Shadows
+
+$shadow1: 0 7px 14px rgba(0, 0, 0, 0.01), 0 56px 112px rgba(0, 0, 0, 0.02);
+
+// Mixins
+
+@mixin large-button {
+	font-size: $fontLargeButton;
+	font-weight: $weightButton;
+	color: $secondary;
+	&:hover {
+		color: $primary;
+	}
+}
+
+@mixin small-button {
+	font-size: $fontButton;
+	font-weight: $weightButton;
+	color: $secondary;
+	&:hover {
+		color: $primary;
+	}
+}
+
+// Page structure
+:root {
+	font-size: 12px;
+	font-family: 'helvetica', sans-serif;
+	line-height: 1.2;
+}
+
+body {
+	background-color: white;
+}
+
+.app-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+// Section menu
+
+.navigation-menu {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 96px;
+	align-items: flex-end;
+	margin-top: 56px;
+	z-index: 2;
+}
+
+.section-button {
+	width: 96px;
+	height: 24px;
+	font-size: 14px;
+	text-align: end;
+	margin-bottom: 8px;
+	color: $secondary;
+	&:hover {
+		color: $primary;
+	}
+}
+
+// App content
+
+.app-content {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	overflow: auto;
+}

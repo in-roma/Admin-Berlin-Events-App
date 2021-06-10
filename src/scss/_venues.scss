@@ -1,0 +1,159 @@
+// venue filter
+
+.venue-filter {
+	position: fixed;
+	display: flex;
+	flex-flow: row nowrap;
+	top: 61px;
+	z-index: 3;
+}
+.venue-filter-button {
+	@include large-button;
+	padding: 0px 16px 0px 16px;
+}
+
+.venue-filter-input {
+	font-size: $fontText;
+	width: 250px;
+}
+.venue-filter-input-line {
+	position: absolute;
+	left: 328px;
+	width: 220px;
+	height: 1px;
+	background-color: $line;
+	margin-left: 16px;
+}
+.venue-filter-button-submit {
+	@include small-button;
+	font-size: 8px;
+}
+
+// venue action buttons
+
+.venue-actions {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 96px;
+	align-items: flex-start;
+	top: 56px;
+	right: 0;
+	z-index: 2;
+}
+
+.venue-action-button {
+	width: 96px;
+	height: 24px;
+	font-size: 14px;
+	text-align: start;
+	margin-bottom: 8px;
+	color: $secondary;
+	&:hover {
+		color: $primary;
+	}
+}
+
+// venue elements
+
+.venue-list {
+	position: absolute;
+	top: 144px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.venue-card {
+	width: auto;
+	height: auto;
+	margin-bottom: 96px;
+}
+
+.venue-inner-card {
+	width: 1000px;
+	height: 260px;
+	display: flex;
+	flex-flow: row nowrap;
+	box-shadow: $shadow1;
+	border: 1px solid $line;
+}
+
+.venue-card-frame {
+	width: 400px;
+	height: 260px;
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+}
+
+.venue-picture-frame {
+	width: 400px;
+	height: 260px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.venue-picture {
+	width: 100%;
+	height: auto;
+	z-index: -1;
+}
+
+.venue-card-infos {
+	border-left: 1px solid $line;
+	width: 100%;
+	height: auto;
+	overflow-y: auto;
+	margin-top: 6px;
+}
+
+.venue-card-line {
+	position: relative;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-flow: row;
+	align-content: flex-start;
+	margin-left: 16px;
+	margin-top: 10px;
+	margin-right: 16px;
+	& h1,
+	label {
+		font-size: $fontTitle;
+		font-weight: $weightTitle;
+		line-height: $heightTitle;
+	}
+	& input,
+	textarea {
+		position: absolute;
+		width: 420px;
+		height: auto;
+		left: 68px;
+		font-weight: $weightText;
+		font-size: $fontText;
+		line-height: $heightText;
+		text-align: start;
+	}
+}
+
+.venue-card-select-button {
+	padding-bottom: 16px;
+}
+
+.venue-buttons-bottom {
+	position: relative;
+	right: 0;
+	top: 32px;
+	z-index: 3;
+	text-align: end;
+}
+
+.venue-card-button {
+	@include small-button;
+	padding-left: 24px;
+}

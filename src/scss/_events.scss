@@ -1,0 +1,187 @@
+// Event filter
+
+.event-filter {
+	position: fixed;
+	display: flex;
+	flex-flow: row nowrap;
+	top: 61px;
+	z-index: 3;
+}
+.event-filter-button {
+	@include large-button;
+	padding: 0px 16px 0px 16px;
+}
+
+.event-filter-input {
+	font-size: $fontText;
+	width: 250px;
+}
+.event-filter-input-line {
+	position: absolute;
+	left: 328px;
+	width: 220px;
+	height: 1px;
+	background-color: $line;
+	margin-left: 16px;
+}
+.event-filter-button-submit {
+	@include small-button;
+	font-size: 8px;
+}
+
+// Event action buttons
+
+.event-actions {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	width: 96px;
+	align-items: flex-start;
+	top: 56px;
+	right: 0;
+	z-index: 2;
+}
+
+.event-action-button {
+	width: 96px;
+	height: 24px;
+	font-size: 14px;
+	text-align: start;
+	margin-bottom: 8px;
+	color: $secondary;
+	&:hover {
+		color: $primary;
+	}
+}
+
+// Event elements
+
+.event-list {
+	position: absolute;
+	top: 136px;
+	display: flex;
+	flex-direction: column;
+}
+
+.event-card {
+	width: auto;
+	height: auto;
+	margin-bottom: 24px;
+}
+
+.event-inner-card {
+	width: 720px;
+	height: 340px;
+	display: flex;
+	flex-flow: row nowrap;
+	box-shadow: $shadow1;
+	border: 1px solid $line;
+}
+
+.eventcard-frame {
+	width: 360px;
+	height: 340px;
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+}
+
+.event-picture-frame {
+	width: 360px;
+	height: 280px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.event-picture {
+	width: 100%;
+	height: auto;
+	z-index: -1;
+}
+
+.event-text-zone {
+	width: 360px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+	& h1 {
+		font-size: $fontTitle;
+		margin-left: 18px;
+		color: $primary;
+		font-weight: $weightTitle;
+	}
+}
+
+.event-card-infos {
+	border-left: 1px solid $line;
+	width: 100%;
+	height: auto;
+	overflow-y: auto;
+	margin-top: 6px;
+}
+
+.event-card-line {
+	position: relative;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-flow: row;
+	align-content: flex-start;
+	margin-left: 16px;
+	margin-top: 10px;
+	margin-right: 16px;
+	& h1,
+	label {
+		font-size: $fontTitle;
+		font-weight: $weightTitle;
+		line-height: $heightTitle;
+	}
+	& input,
+	textarea {
+		position: absolute;
+		width: 290px;
+		height: auto;
+		left: 48px;
+		font-weight: $weightText;
+		font-size: $fontText;
+		line-height: $heightText;
+		text-align: start;
+	}
+}
+
+.event-buttons-right {
+	width: 128px;
+	height: 64px;
+	position: relative;
+	top: 0;
+	left: 736px;
+	top: -340px;
+	z-index: 3;
+	text-align: end;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	// background-color: blue;
+}
+
+.event-card-select-button {
+	padding-bottom: 16px;
+}
+
+.event-buttons-bottom {
+	position: relative;
+	right: 0;
+	top: -40px;
+	z-index: 3;
+	text-align: end;
+}
+
+.event-card-button {
+	@include small-button;
+	padding-left: 24px;
+}

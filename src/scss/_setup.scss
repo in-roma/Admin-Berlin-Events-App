@@ -1,0 +1,47 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+// Reset
+
+ul,
+li {
+	list-style: none;
+	text-decoration: none;
+	color: black;
+}
+
+button {
+	background: none;
+	border: 0;
+	color: inherit;
+	font: inherit;
+	line-height: normal;
+	overflow: visible;
+	padding: 0;
+	-webkit-appearance: button; /* for input */
+	-webkit-user-select: none; /* for button */
+	-moz-user-select: none;
+	-ms-user-select: none;
+	outline: none;
+	cursor: pointer;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	background: none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+input {
+	border: none;
+	outline: none;
+}
